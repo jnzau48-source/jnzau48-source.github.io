@@ -1,6 +1,4 @@
-nano style.css
-nano script.jsnano style.css
-nano script.js<!DOCTPE html>
+<!DOCTPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -49,7 +47,7 @@ nano script.js<!DOCTPE html>
   /* HERO SECTION */
   .hero {
     height: 75vh;
-    background: url('images/c5d2aaf2.png') center/cover no-repeat;
+    background: url('images/hero.jpg') center/cover no-repeat;
     display: flex; flex-direction: column; justify-content: center; align-items: center;
     color: white; text-align: center; position: relative;
   }
@@ -156,10 +154,10 @@ nano script.js<!DOCTPE html>
 
   <!-- Carousel -->
   <div class="carousel">
-    <img src="images/1714026907.jpg" class="active" alt="Floods in Nairobi">
-    <img src="images/20170826_MAP003_0.jpg" alt="Orphans">
-    <img src="images/dsc01448.jpg.webp" alt="Street Kids">
-    <img src="images/1751911082.jpg" alt="Fire Outbreak">
+    <img src="images/flood.jpg" class="active" alt="Floods in Nairobi">
+    <img src="images/orphans.jpg" alt="Orphans">
+    <img src="images/streetkids.jpg" alt="Street Kids">
+    <img src="images/fire.jpg" alt="Fire Outbreak">
     <div class="carousel-controls">
       <button id="prev">&#10094; Prev</button>
       <button id="next">Next &#10095;</button>
@@ -175,10 +173,10 @@ nano script.js<!DOCTPE html>
 
   <!-- Cards -->
   <div class="card-grid">
-    <div class="card"><img src="images/1714026907.jpg" alt="Floods"><div class="card-content"><h3>Flood Relief</h3><p>Support to build drainage, evacuate affected, provide food & water.</p></div></div>
-    <div class="card"><img src="images/20170826_MAP003_0.jpg" alt="Orphans"><div class="card-content"><h3>Support Orphans</h3><p>Help children with shelter, education, and hope.</p></div></div>
-    <div class="card"><img src="images/dsc01448.jpg.webp" alt="Street Kids"><div class="card-content"><h3>Help Street Kids</h3><p>Provide essentials and guidance for a better life.</p></div></div>
-    <div class="card"><img src="images/1751911082.jpg" alt="Fire"><div class="card-content"><h3>Fire Response</h3><p>Provide relief and essential supplies to fire-affected communities.</p></div></div>
+    <div class="card"><img src="images/flood.jpg" alt="Floods"><div class="card-content"><h3>Flood Relief</h3><p>Support to build drainage, evacuate affected, provide food & water.</p></div></div>
+    <div class="card"><img src="images/orphans.jpg" alt="Orphans"><div class="card-content"><h3>Support Orphans</h3><p>Help children with shelter, education, and hope.</p></div></div>
+    <div class="card"><img src="images/streetkids.jpg" alt="Street Kids"><div class="card-content"><h3>Help Street Kids</h3><p>Provide essentials and guidance for a better life.</p></div></div>
+    <div class="card"><img src="images/fire.jpg" alt="Fire"><div class="card-content"><h3>Fire Response</h3><p>Provide relief and essential supplies to fire-affected communities.</p></div></div>
   </div>
 </section>
 
@@ -209,8 +207,7 @@ nano script.js<!DOCTPE html>
     {id: 'peopleHelped', target: 1200},
     {id: 'disastersHandled', target: 35},
     {id: 'donors', target: 250}
-  ];
-  counters.forEach(counter => {
+  ];  counters.forEach(counter => {
     let count = 0;
     const el = document.getElementById(counter.id);
     const step = Math.ceil(counter.target / 200);
@@ -241,4 +238,4 @@ nano script.js<!DOCTPE html>
 </script>
 
 </body>
-</html>+
+</html>

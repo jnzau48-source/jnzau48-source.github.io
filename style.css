@@ -1,12 +1,17 @@
 /* style.css */
+
+/* GENERAL BODY */
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
   background: #111;
   color: #fff;
+  line-height: 1.6;
+  scroll-behavior: smooth;
 }
 
+/* HEADER */
 header {
   background: #00bfff;
   padding: 20px;
@@ -18,23 +23,163 @@ header h1 {
   font-size: 2.5em;
 }
 
-section {
-  padding: 40px 20px;
+/* HERO SECTION */
+.hero {
+  height: 75vh;
+  background: url("images/c5d2aaf2.png") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
-section:nth-child(even) {
+.hero-text {
+  background: rgba(0,0,0,0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.hero-text h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+.hero-text p {
+  font-size: 1.5em;
+}
+
+/* SECTIONS */
+section {
+  padding: 50px 20px;
+}
+
+section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+section p {
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+  text-align: center;
+}
+
+/* DISASTER CARDS */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
   background: #222;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-a {
-  color: #00bfff;
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.card h3 {
+  margin: 10px 0;
+}
+
+.card p {
+  padding: 0 10px 10px 10px;
+  font-size: 0.9em;
+}
+
+/* DONATE SECTION */
+.donate {
+  text-align: center;
+  padding: 40px 20px;
+  background: #00bfff;
+  color: #111;
+  border-radius: 10px;
+}
+
+.donate h2 {
+  color: #111;
+}
+
+.donate p {
+  color: #111;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.donate a {
+  display: inline-block;
+  background: #111;
+  color: #fff;
+  padding: 12px 25px;
+  margin: 5px;
   text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease;
 }
 
+.donate a:hover {
+  background: #444;
+}
+
+/* M-PESA BUTTON */
+.mpesa-btn {
+  display: inline-block;
+  background: #fcd116;
+  color: #111;
+  padding: 12px 25px;
+  margin: 5px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.mpesa-btn:hover {
+  background: #e6b800;
+}
+
+/* FOOTER */
 footer {
+  background: #111;
+  color: #fff;
   text-align: center;
   padding: 20px;
-  background: #333;
-  color: #aaa;
-}+
+  margin-top: 30px;
+  border-top: 2px solid #00bfff;
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .hero-text h1 {
+    font-size: 2em;
+  }
+
+  .hero-text p {
+    font-size: 1.2em;
+  }
+}

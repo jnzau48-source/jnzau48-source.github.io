@@ -227,3 +227,26 @@ footer {
   padding: 10px;
   margin: 10px 0;
 }
+.mission, .impact, .contact{
+padding:40px;
+text-align:center;
+}
+
+.impact-box{
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+}
+
+.impact-box div{
+background:#f2f2f2;
+padding:20px;
+border-radius:8px;
+width:150px;
+}
+
+.impact-box h3{
+font-size:30px;
+color:#00b894;
+}

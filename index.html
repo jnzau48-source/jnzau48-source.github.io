@@ -4,135 +4,122 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>J-Tech Foundation</title>
-  <!-- LINK TO EXTERNAL CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <h1>J-Tech Foundation</h1>
-  </header>
+<!-- HERO SECTION -->
+<header>
+  <h1>J-Tech Foundation</h1>
+  <p>Creating Awareness for a Better World</p>
+  <img src="images/hero.png" alt="J-Tech Foundation Hero Image" class="hero-img">
+</header>
 
-  <!-- HERO SECTION -->
-  <section class="hero">
-    <div class="hero-text">
-      <h1>Awareness for a Better World</h1>
-      <p>Supporting those affected by disasters and daily world challenges</p>
-    </div>
-  </section> 
-<section class="mission">
-<h2>Our Mission</h2>
-
-<p>
-J-Tech Foundation is committed to helping vulnerable communities by
-supporting disaster victims, street children, and orphaned families.
-We provide emergency relief, education support, and community programs
-to build a better future.
-</p>
-
+<!-- MISSION SECTION -->
+<section id="mission">
+  <h2>Our Mission</h2>
+  <p>
+    J-Tech Foundation is dedicated to supporting disaster-affected communities, improving daily life challenges, 
+    and helping the vulnerable including flood victims, orphans, street children, and fire outbreak survivors.
+  </p>
 </section>
-<button onclick="openMpesaPopup()" class="donate-btn">
-Donate with M-Pesa
-</button>
-  <!-- MISSION SECTION -->
-  <section>
-    <h2>Our Mission</h2>
-    <p>J-Tech Foundation exists to provide immediate support to disaster victims, empower orphanages, assist street children, and create a stronger, safer community through your support.</p>
-  </section>
-<section class="impact">
 
-<h2>Our Impact</h2>
-
-<div class="impact-box">
-
-<div>
-<h3>500+</h3>
-<p>Families Supported</p>
-</div>
-
-<div>
-<h3>200+</h3>
-<p>Children Assisted</p>
-</div>
-
-<div>
-<h3>15+</h3>
-<p>Community Projects</p>
-</div>
-
-</div>
-
-</section>
-  <!-- DISASTERS / SUPPORT SECTION -->
-  <section>
-    <h2>Current Challenges</h2>
-    <div class="cards">
-      <div class="card">
-        <img src="images/flood.jpg" alt="Floods in Nairobi">
-        <h3>Floods</h3>
-        <p>Floods in Nairobi have displaced families and damaged infrastructure. Your support can help build drainage systems, evacuate victims, and provide clean water.</p>
-      </div>
-      <div class="card">
-        <img src="images/orphans.jpg" alt="Orphans">
-        <h3>Orphanages</h3>
-        <p>Orphans need shelter, food, and education. Contributions allow us to provide a safe environment and improve their quality of life.</p>
-      </div>
-      <div class="card">
-        <img src="images/streetkids.jpg" alt="Street Children">
-        <h3>Street Children</h3>
-        <p>Street children face neglect and hunger daily. With your help, we provide food, mentorship, and rehabilitation programs.</p>
-      </div>
-      <div class="card">
-        <img src="images/fire.jpg" alt="Fire Outbreaks">
-        <h3>Fire Outbreaks</h3>
-        <p>Fire disasters destroy homes and livelihoods. Donations allow us to respond quickly and provide essential aid to affected families.</p>
-      </div>
+<!-- DISASTER AWARENESS -->
+<section id="disasters">
+  <h2>Current Challenges</h2>
+  <div class="disaster-grid">
+    <div class="disaster-card">
+      <img src="images/flood.jpg" alt="Floods in Nairobi">
+      <h3>Floods in Nairobi</h3>
+      <p>Floods are affecting lives in Nairobi. Your support helps build drainage systems, evacuate the affected, and provide food & clean water.</p>
     </div>
-  </section>
-
-  <!-- DONATE SECTION -->
-  <section class="donate">
-    <h2>Support Our Work</h2>
-    <p>Your contribution makes a real difference. Donate via PayPal or M-Pesa.</p>
-    
-    <!-- PayPal button -->
-    <a href="YOUR_PAYPAL_LINK" target="_blank">Donate via PayPal</a>
-    
-    <!-- M-Pesa button with copy-to-clipboard -->
-    <a href="#" class="mpesa-btn" onclick="navigator.clipboard.writeText('0704813812'); alert('M-Pesa number 0704813812 copied! Open your M-Pesa app to complete the donation.');">Donate via M-Pesa</a>
-  </section>
-<section class="contact">
-
-<h2>Contact Us</h2>
-
-<p>Email: jnzau48@gmail.com</p>
-<p>Phone: +254704813812</p>
-
-</section>
-  <!-- FOOTER -->
-  <footer>
-    &copy; 2026 J-Tech Foundation. All Rights Reserved.
-  </footer>
-
-<!-- MPESA POPUP -->
-<div id="mpesaPopup" class="popup">
-  <div class="popup-content">
-    <span class="close" onclick="closeMpesaPopup()">&times;</span>
-
-    <h2>Support J-Tech Foundation</h2>
-    <p>Donate via M-Pesa</p>
-
-    <p><strong>Paybill / Phone:</strong></p>
-
-    <div class="mpesa-box">
-      <span id="mpesaNumber">0704813812</span>
-      <button onclick="copyMpesa()">Copy</button>
+    <div class="disaster-card">
+      <img src="images/orphans.jpg" alt="Orphans">
+      <h3>Orphans & Street Children</h3>
+      <p>Support orphanages and street kids through donations for education, food, and safe shelter.</p>
     </div>
+    <div class="disaster-card">
+      <img src="images/streetkids.jpg" alt="Street Kids">
+      <h3>Street Children</h3>
+      <p>Help street children find hope and resources for a better life.</p>
+    </div>
+    <div class="disaster-card">
+      <img src="images/fire.jpg" alt="Fire Outbreaks">
+      <h3>Fire Outbreaks</h3>
+      <p>Provide emergency support to fire victims through timely aid and relief.</p>
+    </div>
+  </div>
+</section>
 
-    <p>Open M-Pesa → Lipa na M-Pesa → Send Money → Paste the number.</p>
+<!-- DONATION SECTION -->
+<section id="donate">
+  <h2>Support Our Foundation</h2>
+  <div class="donation-buttons">
+    <!-- M-PESA BUTTON -->
+    <button onclick="showMpesaPopup()">Donate via M-Pesa</button>
 
+    <!-- PAYPAL / EMAIL BUTTON -->
+    <a href="mailto:jnzau48@gmail.com?subject=Donation%20to%20J-Tech%20Foundation" target="_blank">
+      <button>Donate via PayPal / Email</button>
+    </a>
+  </div>
+
+  <!-- SHOW M-PESA NUMBER -->
+  <p>M-Pesa Number: <span id="mpesa-number">0704813812</span> 
+    <button onclick="copyNumber()">Copy Number</button>
+  </p>
+</section>
+
+<!-- M-PESA POPUP -->
+<div id="mpesa-popup">
+  <h3>M-Pesa Donation</h3>
+  <input type="text" id="mpesa-phone" placeholder="Enter phone number">
+  <input type="number" id="mpesa-amount" placeholder="Amount KES">
+  <div class="popup-buttons">
+    <button onclick="submitMpesa()">Submit</button>
+    <button onclick="closeMpesaPopup()">Cancel</button>
   </div>
 </div>
+
+<script>
+function showMpesaPopup() {
+  const popup = document.getElementById('mpesa-popup');
+  popup.style.display = 'block';
+  setTimeout(() => popup.classList.add('show'), 10); // smooth popup animation
+}
+
+function closeMpesaPopup() {
+  const popup = document.getElementById('mpesa-popup');
+  popup.classList.remove('show');
+  setTimeout(() => popup.style.display = 'none', 300); // wait for animation
+}
+
+function submitMpesa() {
+  let phone = document.getElementById('mpesa-phone').value;
+  let amount = document.getElementById('mpesa-amount').value;
+  if(phone && amount) {
+    alert('Donation request sent for ' + phone + ' of KES ' + amount + '.\n(This is a placeholder; real payment requires Safaricom API integration.)');
+    closeMpesaPopup();
+  } else {
+    alert('Please enter both phone number and amount.');
+  }
+}
+
+// COPY M-PESA NUMBER FUNCTION
+function copyNumber() {
+  navigator.clipboard.writeText(document.getElementById('mpesa-number').innerText)
+    .then(() => { alert("M-Pesa number copied to clipboard!"); })
+    .catch(() => { alert("Failed to copy number."); });
+}
+</script>
+
+// COPY M-PESA NUMBER FUNCTION
+function copyNumber() {
+  navigator.clipboard.writeText(document.getElementById('mpesa-number').innerText)
+    .then(() => { alert("M-Pesa number copied to clipboard!"); })
+    .catch(() => { alert("Failed to copy number."); });
+}
+</script>
+
 </body>
 </html>

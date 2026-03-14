@@ -20,8 +20,11 @@
       <h1>Awareness for a Better World</h1>
       <p>Supporting those affected by disasters and daily world challenges</p>
     </div>
-  </section>
+  </section> 
 
+<button onclick="openMpesaPopup()" class="donate-btn">
+Donate with M-Pesa
+</button>
   <!-- MISSION SECTION -->
   <section>
     <h2>Our Mission</h2>
@@ -72,5 +75,24 @@
     &copy; 2026 J-Tech Foundation. All Rights Reserved.
   </footer>
 
+<!-- MPESA POPUP -->
+<div id="mpesaPopup" class="popup">
+  <div class="popup-content">
+    <span class="close" onclick="closeMpesaPopup()">&times;</span>
+
+    <h2>Support J-Tech Foundation</h2>
+    <p>Donate via M-Pesa</p>
+
+    <p><strong>Paybill / Phone:</strong></p>
+
+    <div class="mpesa-box">
+      <span id="mpesaNumber">0704813812</span>
+      <button onclick="copyMpesa()">Copy</button>
+    </div>
+
+    <p>Open M-Pesa → Lipa na M-Pesa → Send Money → Paste the number.</p>
+
+  </div>
+</div>
 </body>
 </html>
